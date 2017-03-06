@@ -25,7 +25,7 @@ aside {
 }
 
 article{
-/*  margin-left:  250px;*/
+    padding-left: 0px;
 }
 
 main {
@@ -73,10 +73,14 @@ button:active {
 }
 
 /* �������� �������� */
-.slide-enter-active, .slide-leave-active {
+.slide-enter-active, .slide-leave-active, .shrink-transition {
     transition: all .3s cubic-bezier(.65, .05, .36, 1);
 }
 
 .slide-enter, .slide-leave-active {
     left: -100%;
+}
+
+.shrink-transition {
+    padding-left: 250px;
 }

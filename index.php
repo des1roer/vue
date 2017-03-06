@@ -12,7 +12,7 @@
 
     <div id="app">
       <header>
-        <button @click="show = !show" onclick='myfunc()'>
+        <button @click="show = !show">
           <i class="ion-navicon"></i>
         </button>
       </header>
@@ -22,7 +22,7 @@
 
           </aside>
         </transition>
-        <article style="background-color:violet">dasasd</article>
+        <article style="background-color:violet" :class="{ 'shrink-transition': show }">dasasd</article>
       </main>
     </div>
     <script src="js/script.js" type="text/javascript"></script>
