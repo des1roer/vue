@@ -25,11 +25,11 @@ aside {
 }
 
 article{
-    padding-left: 0px;
+    padding-left: 20px;
 }
 
 main {
-  margin-top: 57px;
+  /*margin-top: 57px;*/
   display: table;
   table-layout:fixed;
   width: 100%;
@@ -41,7 +41,23 @@ aside {
     background-color: #fff;
     width: 250px;
     position: fixed;
-    top: 55px;
+    /*top: 0px;*/
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.vis {
+    background-color: #fff;
+    width: 20px;
+    position: fixed;
+    /*top: 0px;*/
+    height: 100%;
     left: 0;
     bottom: 0px;
     z-index: 1;
@@ -73,8 +89,12 @@ button:active {
 }
 
 /* �������� �������� */
-.slide-enter-active, .slide-leave-active, .shrink-transition {
+.slide-enter-active, .slide-leave-active, .shrink-transition, .vis-transition {
     transition: all .3s cubic-bezier(.65, .05, .36, 1);
+}
+
+.vis-transition {
+    margin-left: 250px;
 }
 
 .slide-enter, .slide-leave-active {
@@ -82,5 +102,5 @@ button:active {
 }
 
 .shrink-transition {
-    padding-left: 250px;
+    padding-left: 270px; 
 }

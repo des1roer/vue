@@ -11,23 +11,21 @@
   <body>
 
     <div id="app">
-      <header>
-        <button @click="show = !show">
-          <i class="ion-navicon"></i>
-        </button>
-      </header>
+      <!--      <header>
+              <button @click="show = !show">
+                <i class="ion-navicon"></i>
+              </button>
+            </header>-->
       <main>
         <transition name="slide">
           <aside v-show="show" style="background-color:green">
-
           </aside>
         </transition>
-        <article style="background-color:violet" :class="{ 'shrink-transition': show }">dasasd</article>
-      </main>
-    </div>
-    <script src="js/script.js" type="text/javascript"></script>
+        <div class="vis" style="background-color:blue" :class="{ 'vis-transition': show }" @click="show = !show"></div>
+      <article style="background-color:violet" :class="{ 'shrink-transition': show }">dasasd</article>
+    </main>
+  </div>
+  <script src="js/script.js" type="text/javascript"></script>
 
-
-    
-  </body>
+</body>
 </html>
