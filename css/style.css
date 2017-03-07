@@ -37,6 +37,7 @@ main {
   /*background: #ccc;*/
 }
 
+
 aside {
     background-color: #fff;
     width: 250px;
@@ -103,4 +104,12 @@ button:active {
 
 .shrink-transition {
     padding-left: 270px; 
+}
+
+.vis, aside{
+  top: 57px;
+}
+
+main{
+  margin-top: 57px;
 }

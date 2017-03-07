@@ -11,11 +11,11 @@
   <body>
 
     <div id="app">
-      <!--      <header>
+            <header>
               <button @click="show = !show">
                 <i class="ion-navicon"></i>
               </button>
-            </header>-->
+            </header>
       <main>
         <transition name="slide">
           <aside v-show="show" style="background-color:green">
